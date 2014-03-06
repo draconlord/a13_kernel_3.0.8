@@ -100,14 +100,14 @@ build_kernel()
 	cp .config output/
 	cp rootfs/initrd.img output/
 
-        mkbootimg --kernel output/bImage \
+        ../tools/bins/mkbootimg --kernel output/bImage \
                         --ramdisk output/initrd.img \
                         --board 'sun5i' \
                         --base 0x40000000 \
                         -o output/nandc.img
 
 
-	mkbootimg --kernel output/bImage \
+	../tools/bins/mkbootimg --kernel output/bImage \
 			--ramdisk output/initrd.img \
 			--board 'sun5i' \
 			--base 0x40000000 \
