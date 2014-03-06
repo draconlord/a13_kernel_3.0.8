@@ -254,39 +254,39 @@ OUTPUT(resume1.elf elf32-littlearm)
  .debug_abbrev  0x0000104b       0x14 mem_mmu_pc_asm.o
  .debug_abbrev  0x0000105f       0xe9 mem_cpu.o
 
-.debug_info     0x00000000     0x6e43
+.debug_info     0x00000000     0x6e5e
  .debug_info    0x00000000      0x71b ./super/resume/resume1.o
  .debug_info    0x0000071b       0xcf ./super/common.o
- .debug_info    0x000007ea       0x7f ./super/stack.o
- .debug_info    0x00000869     0x2196 ./super/super_twi.o
- .debug_info    0x000029ff       0x85 ./super/super_delay.o
- .debug_info    0x00002a84     0x2085 ./super/super_clock.o
- .debug_info    0x00004b09      0x42f ./super/super_power.o
- .debug_info    0x00004f38      0x35a ./super/super_int.o
- .debug_info    0x00005292      0x409 ./super/super_tmr.o
- .debug_info    0x0000569b      0x5f9 ./super/dram/dram.o
- .debug_info    0x00005c94      0x6cb ./super/dram/dram_init.o
- .debug_info    0x0000635f      0x4e8 pm_debug.o
- .debug_info    0x00006847      0x169 mem_mmu_pc.o
- .debug_info    0x000069b0       0x85 mem_mmu_pc_asm.o
- .debug_info    0x00006a35      0x40e mem_cpu.o
+ .debug_info    0x000007ea       0x88 ./super/stack.o
+ .debug_info    0x00000872     0x2196 ./super/super_twi.o
+ .debug_info    0x00002a08       0x8e ./super/super_delay.o
+ .debug_info    0x00002a96     0x2085 ./super/super_clock.o
+ .debug_info    0x00004b1b      0x42f ./super/super_power.o
+ .debug_info    0x00004f4a      0x35a ./super/super_int.o
+ .debug_info    0x000052a4      0x409 ./super/super_tmr.o
+ .debug_info    0x000056ad      0x5f9 ./super/dram/dram.o
+ .debug_info    0x00005ca6      0x6cb ./super/dram/dram_init.o
+ .debug_info    0x00006371      0x4e8 pm_debug.o
+ .debug_info    0x00006859      0x169 mem_mmu_pc.o
+ .debug_info    0x000069c2       0x8e mem_mmu_pc_asm.o
+ .debug_info    0x00006a50      0x40e mem_cpu.o
 
-.debug_line     0x00000000     0x10af
+.debug_line     0x00000000     0x10c1
  .debug_line    0x00000000       0xfe ./super/resume/resume1.o
  .debug_line    0x000000fe       0x58 ./super/common.o
  .debug_line    0x00000156      0x150 ./super/stack.o
- .debug_line    0x000002a6      0x26a ./super/super_twi.o
- .debug_line    0x00000510       0x4e ./super/super_delay.o
- .debug_line    0x0000055e      0x126 ./super/super_clock.o
- .debug_line    0x00000684      0x19c ./super/super_power.o
- .debug_line    0x00000820       0xb7 ./super/super_int.o
- .debug_line    0x000008d7       0x76 ./super/super_tmr.o
- .debug_line    0x0000094d      0x1e5 ./super/dram/dram.o
- .debug_line    0x00000b32      0x279 ./super/dram/dram_init.o
- .debug_line    0x00000dab      0x10c pm_debug.o
- .debug_line    0x00000eb7       0x7d mem_mmu_pc.o
- .debug_line    0x00000f34       0x8a mem_mmu_pc_asm.o
- .debug_line    0x00000fbe       0xf1 mem_cpu.o
+ .debug_line    0x000002a6      0x273 ./super/super_twi.o
+ .debug_line    0x00000519       0x4e ./super/super_delay.o
+ .debug_line    0x00000567      0x12f ./super/super_clock.o
+ .debug_line    0x00000696      0x19c ./super/super_power.o
+ .debug_line    0x00000832       0xb7 ./super/super_int.o
+ .debug_line    0x000008e9       0x76 ./super/super_tmr.o
+ .debug_line    0x0000095f      0x1e5 ./super/dram/dram.o
+ .debug_line    0x00000b44      0x279 ./super/dram/dram_init.o
+ .debug_line    0x00000dbd      0x10c pm_debug.o
+ .debug_line    0x00000ec9       0x7d mem_mmu_pc.o
+ .debug_line    0x00000f46       0x8a mem_mmu_pc_asm.o
+ .debug_line    0x00000fd0       0xf1 mem_cpu.o
 
 .debug_loc      0x00000000     0x1f9d
  .debug_loc     0x00000000       0x54 ./super/resume/resume1.o
@@ -390,31 +390,31 @@ OUTPUT(resume1.elf elf32-littlearm)
 .debug_ranges   0x00000000       0xa0
  .debug_ranges  0x00000000       0xa0 ./super/resume/resume1.o
 
-.debug_str      0x00000000     0x215f
- .debug_str     0x00000000      0x3f8 ./super/resume/resume1.o
-                                0x447 (size before relaxing)
- .debug_str     0x000003f8       0x31 ./super/common.o
-                                 0xf1 (size before relaxing)
- .debug_str     0x00000429      0xf3b ./super/super_twi.o
-                               0x106a (size before relaxing)
- .debug_str     0x00001364       0xbc ./super/super_clock.o
-                                0xfdf (size before relaxing)
- .debug_str     0x00001420      0x128 ./super/super_power.o
-                                0x2ab (size before relaxing)
- .debug_str     0x00001548      0x1e4 ./super/super_int.o
-                                0x301 (size before relaxing)
- .debug_str     0x0000172c      0x1b3 ./super/super_tmr.o
-                                0x2d5 (size before relaxing)
- .debug_str     0x000018df      0x2e5 ./super/dram/dram.o
-                                0x426 (size before relaxing)
- .debug_str     0x00001bc4      0x2c5 ./super/dram/dram_init.o
-                                0x43a (size before relaxing)
- .debug_str     0x00001e89      0x1f9 pm_debug.o
-                                0x31a (size before relaxing)
- .debug_str     0x00002082       0x3d mem_mmu_pc.o
-                                0x145 (size before relaxing)
- .debug_str     0x000020bf       0xa0 mem_cpu.o
-                                0x28f (size before relaxing)
+.debug_str      0x00000000     0x2168
+ .debug_str     0x00000000      0x401 ./super/resume/resume1.o
+                                0x450 (size before relaxing)
+ .debug_str     0x00000401       0x31 ./super/common.o
+                                 0xfa (size before relaxing)
+ .debug_str     0x00000432      0xf3b ./super/super_twi.o
+                               0x1073 (size before relaxing)
+ .debug_str     0x0000136d       0xbc ./super/super_clock.o
+                                0xfe8 (size before relaxing)
+ .debug_str     0x00001429      0x128 ./super/super_power.o
+                                0x2b4 (size before relaxing)
+ .debug_str     0x00001551      0x1e4 ./super/super_int.o
+                                0x30a (size before relaxing)
+ .debug_str     0x00001735      0x1b3 ./super/super_tmr.o
+                                0x2de (size before relaxing)
+ .debug_str     0x000018e8      0x2e5 ./super/dram/dram.o
+                                0x42f (size before relaxing)
+ .debug_str     0x00001bcd      0x2c5 ./super/dram/dram_init.o
+                                0x443 (size before relaxing)
+ .debug_str     0x00001e92      0x1f9 pm_debug.o
+                                0x323 (size before relaxing)
+ .debug_str     0x0000208b       0x3d mem_mmu_pc.o
+                                0x14e (size before relaxing)
+ .debug_str     0x000020c8       0xa0 mem_cpu.o
+                                0x298 (size before relaxing)
 
 .comment        0x00000000       0x2a
  .comment       0x00000000       0x2a ./super/resume/resume1.o

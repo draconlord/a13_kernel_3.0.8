@@ -169,27 +169,27 @@ OUTPUT(resume0.elf elf32-littlearm)
  .debug_abbrev  0x0000071c       0x14 mem_mmu_pc_asm.o
  .debug_abbrev  0x00000730       0xe9 mem_cpu.o
 
-.debug_info     0x00000000     0x5377
+.debug_info     0x00000000     0x5392
  .debug_info    0x00000000      0x60e ./super/resume/resume0.o
  .debug_info    0x0000060e       0xcf ./super/common.o
- .debug_info    0x000006dd       0x7f ./super/stack.o
- .debug_info    0x0000075c     0x2196 ./super/super_twi.o
- .debug_info    0x000028f2       0x85 ./super/super_delay.o
- .debug_info    0x00002977     0x2085 ./super/super_clock.o
- .debug_info    0x000049fc      0x4e8 pm_debug.o
- .debug_info    0x00004ee4       0x85 mem_mmu_pc_asm.o
- .debug_info    0x00004f69      0x40e mem_cpu.o
+ .debug_info    0x000006dd       0x88 ./super/stack.o
+ .debug_info    0x00000765     0x2196 ./super/super_twi.o
+ .debug_info    0x000028fb       0x8e ./super/super_delay.o
+ .debug_info    0x00002989     0x2085 ./super/super_clock.o
+ .debug_info    0x00004a0e      0x4e8 pm_debug.o
+ .debug_info    0x00004ef6       0x8e mem_mmu_pc_asm.o
+ .debug_info    0x00004f84      0x40e mem_cpu.o
 
-.debug_line     0x00000000      0x8b1
+.debug_line     0x00000000      0x8c3
  .debug_line    0x00000000       0xa4 ./super/resume/resume0.o
  .debug_line    0x000000a4       0x58 ./super/common.o
  .debug_line    0x000000fc      0x150 ./super/stack.o
- .debug_line    0x0000024c      0x26a ./super/super_twi.o
- .debug_line    0x000004b6       0x4e ./super/super_delay.o
- .debug_line    0x00000504      0x126 ./super/super_clock.o
- .debug_line    0x0000062a      0x10c pm_debug.o
- .debug_line    0x00000736       0x8a mem_mmu_pc_asm.o
- .debug_line    0x000007c0       0xf1 mem_cpu.o
+ .debug_line    0x0000024c      0x273 ./super/super_twi.o
+ .debug_line    0x000004bf       0x4e ./super/super_delay.o
+ .debug_line    0x0000050d      0x12f ./super/super_clock.o
+ .debug_line    0x0000063c      0x10c pm_debug.o
+ .debug_line    0x00000748       0x8a mem_mmu_pc_asm.o
+ .debug_line    0x000007d2       0xf1 mem_cpu.o
 
 .debug_loc      0x00000000      0xc40
  .debug_loc     0x00000000       0x20 ./super/resume/resume0.o
@@ -249,19 +249,19 @@ OUTPUT(resume0.elf elf32-littlearm)
  .debug_aranges
                 0x00000100       0x20 mem_cpu.o
 
-.debug_str      0x00000000     0x1649
- .debug_str     0x00000000      0x35e ./super/resume/resume0.o
-                                0x39a (size before relaxing)
- .debug_str     0x0000035e       0x31 ./super/common.o
-                                 0xf1 (size before relaxing)
- .debug_str     0x0000038f      0xf3b ./super/super_twi.o
-                               0x106a (size before relaxing)
- .debug_str     0x000012ca       0xbc ./super/super_clock.o
-                                0xfdf (size before relaxing)
- .debug_str     0x00001386      0x223 pm_debug.o
-                                0x31a (size before relaxing)
- .debug_str     0x000015a9       0xa0 mem_cpu.o
-                                0x28f (size before relaxing)
+.debug_str      0x00000000     0x1652
+ .debug_str     0x00000000      0x367 ./super/resume/resume0.o
+                                0x3a3 (size before relaxing)
+ .debug_str     0x00000367       0x31 ./super/common.o
+                                 0xfa (size before relaxing)
+ .debug_str     0x00000398      0xf3b ./super/super_twi.o
+                               0x1073 (size before relaxing)
+ .debug_str     0x000012d3       0xbc ./super/super_clock.o
+                                0xfe8 (size before relaxing)
+ .debug_str     0x0000138f      0x223 pm_debug.o
+                                0x323 (size before relaxing)
+ .debug_str     0x000015b2       0xa0 mem_cpu.o
+                                0x298 (size before relaxing)
 
 .comment        0x00000000       0x2a
  .comment       0x00000000       0x2a ./super/resume/resume0.o
