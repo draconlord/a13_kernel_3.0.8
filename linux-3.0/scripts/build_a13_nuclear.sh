@@ -98,20 +98,20 @@ build_kernel()
 	${OBJCOPY} -R .note.gnu.build-id -S -O binary vmlinux output/bImage
 	cp -vf arch/arm/boot/[zu]Image output/
 	cp .config output/
-	cp rootfs/initrd.img output/
+	cp rootfs/sun5i_rootfs.cpio.gz output/
 
-        ../tools/bins/mkbootimg --kernel output/bImage \
-                        --ramdisk output/initrd.img \
+        mkbootimg --kernel output/bImage \
+                        --ramdisk output/sun5i_rootfs.cpio.gz \
                         --board 'sun5i' \
                         --base 0x40000000 \
-                        -o output/nandc.img
+                        -o output/boot.img
 
 
-	../tools/bins/mkbootimg --kernel output/bImage \
-			--ramdisk output/initrd.img \
+	mkbootimg --kernel output/bImage \
+			--ramdisk output/sun5i_rootfs.cpio.gz \
 			--board 'sun5i' \
 			--base 0x40000000 \
-			-o output/nandc.img
+			-o output/boot.img
 
 
 	for file in $(find drivers sound crypto block fs security net -name "*.ko"); do

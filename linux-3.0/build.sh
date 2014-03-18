@@ -2,7 +2,7 @@
 set -e
 
 PLATFORM="a13_nuclear"
-MODULE=""
+MODULE="all"
 
 show_help()
 {
@@ -44,3 +44,6 @@ else
 	show_help
 	exit 1
 fi
+
+
+
