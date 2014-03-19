@@ -10,7 +10,6 @@ KERN_DIR=$CUR_DIR/linux-${KERN_VER}
 KERN_OUT_DIR=$KERN_DIR/output
 BR_DIR=$CUR_DIR/buildroot
 BR_OUT_DIR=$BR_DIR/output
-U_BOOT_DIR=$CUR_DIR/u-boot
 
 
 update_kdir()
@@ -97,9 +96,6 @@ gen_output_generic()
 	cp -v ${BR_OUT_DIR}/images/* ${OUT_DIR}/
 	cp -r ${KERN_OUT_DIR}/* ${OUT_DIR}/
 
-	if [ -e ${U_BOOT_DIR}/u-boot.bin ]; then
-		cp -v ${U_BOOT_DIR}/u-boot.bin ${OUT_DIR}/
-	fi
 }
 
 gen_output_sun4i()
@@ -125,10 +121,6 @@ gen_output_a13-test()
 
 	#cp -v ${BR_OUT_DIR}/images/* ${OUT_DIR}/
 	cp -r ${KERN_OUT_DIR}/* ${OUT_DIR}/
-
-	if [ -e ${U_BOOT_DIR}/u-boot.bin ]; then
-		cp -v ${U_BOOT_DIR}/u-boot.bin ${OUT_DIR}/
-	fi
 
 	(cd $BR_DIR/target/test; fakeroot ./create_module_image.sh)
 }
@@ -162,9 +154,6 @@ gen_output_sun4i_crane()
 	mkdir -p ${OUT_DIR}/android/toolchain/
 	cp ${BR_DIR}/dl/arm-2010.09-50-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2 ${OUT_DIR}/android/toolchain/
 
-	if [ -e ${U_BOOT_DIR}/u-boot.bin ]; then
-		cp -v ${U_BOOT_DIR}/u-boot.bin ${OUT_DIR}/android
-	fi
 }
 
 gen_output_a13_nuclear()
@@ -181,9 +170,6 @@ gen_output_a13_nuclear()
 		mkdir -p ${OUT_DIR}/android/toolchain/
 	cp ${BR_DIR}/dl/arm-2010.09-50-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2 ${OUT_DIR}/android/toolchain/
 
-	if [ -e ${U_BOOT_DIR}/u-boot.bin ]; then
-		cp -v ${U_BOOT_DIR}/u-boot.bin ${OUT_DIR}/android
-	fi
 }
 
 gen_output_a12_nuclear()
@@ -204,9 +190,6 @@ gen_output_a13_dragonboard()
     cp -v ${KERN_OUT_DIR}/boot.img ${OUT_DIR}/dragonboard/
     cp -v ${BR_DIR}/target/dragonboard/rootfs.ext4 ${OUT_DIR}/dragonboard/
 
-    if [ -e ${U_BOOT_DIR}/u-boot.bin ]; then
-        cp -v ${U_BOOT_DIR}/u-boot.bin ${OUT_DIR}/
-    fi
 }
 
 gen_output_sun6i()
@@ -270,14 +253,10 @@ elif [ "$MODULE" = kernel ]; then
 	cd ${KERN_DIR} && ./build.sh -p ${PLATFORM}
 	regen_rootfs
 	gen_output_${PLATFORM}
-elif [ "$MODULE" = "uboot" ]; then
-	cd ${U_BOOT_DIR} && ./build.sh -p sun5i
 else
 	cd ${BR_DIR} && ./build.sh -p ${PLATFORM}
 	export PATH=${BR_OUT_DIR}/external-toolchain/bin:$PATH
 	cd ${KERN_DIR} && ./build.sh -p ${PLATFORM}
-
-	cd ${U_BOOT_DIR} && ./build.sh -p sun5i
 
 	regen_rootfs
 

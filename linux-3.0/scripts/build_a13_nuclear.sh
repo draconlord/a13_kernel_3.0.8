@@ -104,14 +104,14 @@ build_kernel()
                         --ramdisk output/sun5i_rootfs.cpio.gz \
                         --board 'sun5i' \
                         --base 0x40000000 \
-                        -o output/boot.img
+                        -o output/nandc.img
 
 
 	mkbootimg --kernel output/bImage \
 			--ramdisk output/sun5i_rootfs.cpio.gz \
 			--board 'sun5i' \
 			--base 0x40000000 \
-			-o output/boot.img
+			-o output/nandc.img
 
 
 	for file in $(find drivers sound crypto block fs security net -name "*.ko"); do
