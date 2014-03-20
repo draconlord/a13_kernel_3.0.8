@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-PLATFORM="a13_nuclear"
-MODULE="all"
+PLATFORM=""
+MODULE=""
 
 show_help()
 {
