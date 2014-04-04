@@ -1,6 +1,0 @@
-config BR2_PACKAGE_MALI_3D
-       bool "mali 3d"
-       help
-         Mali 3d
-
-
